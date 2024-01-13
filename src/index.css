@@ -1,6 +1,14 @@
 * {
     font-family: 'Montserrat', sans-serif !important;
     color: #333;
+    min-width: 0;
+    --raisin-black: hsla(345, 6%, 13%, 1);
+    --beige: hsla(72, 29%, 87%, 1);
+    --ochre: hsla(33, 91%, 40%, 1);
+    --shamrock-green: hsla(147, 58%, 37%, 1);
+    --hunter-green: hsla(146, 39%, 27%, 1);
+
+
 }
 
 button {

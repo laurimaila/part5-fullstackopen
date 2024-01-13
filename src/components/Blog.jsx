@@ -1,19 +1,25 @@
 import { useState } from "react"
 import styles from "./Blog.module.css"
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, user, setLikes, delBlog }) => {
     const [visible, setVisible] = useState(false)
-
     return (
         <div className={styles.blog}>
-            <span className={styles.title}>{blog.title}</span>
-            <button onClick={() => (setVisible(!visible))}>{visible ? "hide" : "view"}</button>
+            <div className={styles.blogline}>
+                <span>{blog.title}</span>
+                <button onClick={() => (setVisible(!visible))}>{visible ? "hide" : "view"}</button>
+            </div>
             {visible &&
-                <div>
-                    <div>{blog.url}</div>
-                    <div>{blog.likes}</div>
-                    <div>{blog.author}</div>
-                </div>
+                <>
+                    <div className={styles.blogline}>{blog.url}</div>
+                    <div className={styles.blogline}>{blog.likes} likes
+                        <button onClick={() => (setLikes(blog.id, blog.likes + 1))}>Like</button>
+                    </div>
+                    <div className={styles.blogline}>Author: {blog.author}</div>
+                    {(blog.user.id === user.id) &&
+                        <button onClick={() => (delBlog(blog))}>Remove</button>
+                    }
+                </>
             }
         </div >
     )

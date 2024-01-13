@@ -5,13 +5,13 @@ const login = async (credentials) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(credentials)
-    });
+    })
 
     if (!response.ok) {
-        throw new Error("Unauthorized");
+        throw new Error("Unauthorized")
     }
 
-    const data = await response.json();
+    const data = await response.json()
     return data
 }
 

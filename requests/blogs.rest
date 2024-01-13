@@ -8,12 +8,12 @@ Authorization: Bearer
 ###
 POST http://localhost:3003/api/blogs
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6IjY1OWNhODE1ZWU0NGZmMjZiODZkYzY2OSIsImlhdCI6MTcwNDc2NTQ2NCwiZXhwIjoxNzA0NzY5MDY0fQ.hdeDSUlKDhxBc-iWHNLTvugU32mRPCLqxAS0MW3Ictg
+Authorization: Bearer ...
 
 {
-"title": "Laurin koodiblogi", 
-"author": "Lauri Maila", 
-"url": "laurimaila.com", 
+"title": "testblog", 
+"author": "test", 
+"url": "test.com", 
 "likes": 42
 }
 
@@ -22,5 +22,5 @@ PUT http://localhost:3003/api/blogs/64d7bf8758055bf84eb48616
 content-type: application/json
 
 { 
-"likes": 42
+    "likes": 100
 }
