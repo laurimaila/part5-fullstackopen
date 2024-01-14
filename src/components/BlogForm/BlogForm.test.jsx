@@ -1,7 +1,7 @@
 import React from "react"
 import { expect, test, vi } from "vitest"
 import { render, screen } from "@testing-library/react"
-import BlogForm from "../../src/components/BlogForm"
+import BlogForm from "./BlogForm"
 import userEvent from "@testing-library/user-event"
 
 describe("<BlogForm />", () => {

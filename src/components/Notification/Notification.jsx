@@ -6,7 +6,7 @@ const Notification = ({ notification }) => {
     }
 
     return (
-        <div className={notification.isError ? styles.error : styles.success}>
+        <div data-test="notification" className={notification.isError ? styles.error : styles.success}>
             {notification.text}
         </div>
     )

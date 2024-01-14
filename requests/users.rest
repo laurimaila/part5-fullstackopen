@@ -6,7 +6,7 @@ content-type: application/json
 
 {
     "username": "test",
-    "name": "test",
+    "name": "Test Test",
     "password": "test"
 }
 

@@ -3,7 +3,7 @@ GET http://localhost:3003/api/blogs
 ###
 DELETE http://localhost:3003/api/blogs/
 content-type: application/json
-Authorization: Bearer
+Authorization: Bearer ...
 
 ###
 POST http://localhost:3003/api/blogs
@@ -13,8 +13,7 @@ Authorization: Bearer ...
 {
 "title": "testblog", 
 "author": "test", 
-"url": "test.com", 
-"likes": 42
+"url": "http://test.com"
 }
 
 ###
@@ -22,5 +21,5 @@ PUT http://localhost:3003/api/blogs/64d7bf8758055bf84eb48616
 content-type: application/json
 
 { 
-    "likes": 100
+    "likes": 42
 }

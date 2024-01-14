@@ -48,4 +48,4 @@ const deleteBlog = async blogId => {
     }
 }
 
-export default { getBlogs, createBlog, setToken, updateBlog, deleteBlog }
+export default { setToken, getBlogs, createBlog, updateBlog, deleteBlog }

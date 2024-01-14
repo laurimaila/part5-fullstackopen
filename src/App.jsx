@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react"
 import BlogService from "./services/BlogService"
-import Blog from "./components/Blog"
-import Notification from "./components/Notification"
-import Togglable from "./components/Togglable"
-import BlogForm from "./components/BlogForm"
+import Blog from "./components/Blog/Blog"
+import Notification from "./components/Notification/Notification"
+import Togglable from "./components/Togglable/Togglable"
+import BlogForm from "./components/BlogForm/BlogForm"
 import LoginForm from "./components/LoginForm"
 import "./index.css"
 import styles from "./App.module.css"
@@ -105,8 +105,8 @@ const App = () => {
     }
 
     return (
-        <div>
-            <h1>Blogs</h1>
+        <div className={styles.App}>
+            <h1>Blog-app</h1>
 
             <Notification notification={notification} />
 

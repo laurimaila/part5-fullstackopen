@@ -2,8 +2,8 @@ import React from "react"
 import { expect, test, vi } from "vitest"
 import { render, screen } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
-import Blog from "../../src/components/Blog"
-import styles from "../../src/components/Blog.module.css"
+import Blog from "./Blog"
+import styles from "./Blog.module.css"
 
 describe("A single blog item", () => {
     test("At start, only blogs name is rendered ", () => {
